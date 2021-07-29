@@ -1,0 +1,108 @@
+:root {
+  --colorBlue: #324e72;
+  --colorOrange: #372703;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*========== Utilities ==========*/
+.textCenter {
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section_titulo {
+  padding: 2rem;
+  font-size: 1.8rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+/*========== Elegirnos ==========*/
+.elegirnos {
+  max-width: 1200px;
+  width: 100%;
+  width: calc(100% - 4rem);
+  margin: 3rem auto;
+}
+
+.cardsText_card {
+  border-radius: 5px;
+  box-shadow: 7px 7px 12px 2px rgba(113, 101, 101, 0.68);
+  -webkit-box-shadow: 7px 7px 12px 2px rgba(113, 101, 101, 0.68);
+  -moz-box-shadow: 7px 7px 12px 2px rgba(113, 101, 101, 0.68);
+}
+
+.cardsText_card h4 {
+  color: var(--colorBlue);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.cardsText_card p {
+  padding: .5rem 2rem 2rem 2rem;
+  line-height: 1.3rem;
+}
+
+/*========== Propiedades ==========*/
+.propiedades {
+  background-color: #ECECEC;
+  padding-bottom: 4rem;
+}
+
+.cardsPropiedades {
+  max-width: 1200px;
+  width: 100%;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+}
+
+.propiedadesCard {
+  background-color: #FFF;
+  box-shadow: 7px 7px 12px 2px rgba(113, 101, 101, 0.68);
+  -webkit-box-shadow: 7px 7px 12px 2px rgba(113, 101, 101, 0.68);
+  -moz-box-shadow: 7px 7px 12px 2px rgba(113, 101, 101, 0.68);
+}
+
+.propiedadesCard img {
+  border-radius: 5px;
+}
+
+.propiedadesCard_title {
+  color: var(--colorBlue);
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=main.css.map */
