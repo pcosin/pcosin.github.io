@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
 :root {
-    --colorBlue: #324e72;
-    --colorOrange: #ffaf00;
+    --colorBlue: #002554;
+    --colorOrange: #FFAF00;
+    --h1Color: #424242;
+    --pColor: #5A5B5F;
+    --titulosSize: 2.625rem;
+    --mediumSize: 1.875rem;
+    --navSize: 1.25rem;
 }
 
 
@@ -12,9 +20,11 @@
 
 
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
+    color: var(--pColor);
+    // overflow-x: hidden;
 }
 
 ul {
@@ -29,7 +39,10 @@ ul {
     max-width: 100%;
     height: auto;
   }
-  
+
+  h1, h2, h3, h4, h5, h6 {
+      color: var(--h1color);
+  }
 
 /*========== Utilities ==========*/
 
@@ -44,7 +57,7 @@ ul {
 
     &_titulo {
         padding: 2rem;
-        font-size: 1.8rem;
+        font-size: var(--titulosSize);
     }
 
 }
@@ -54,6 +67,75 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
   }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}  
+
+/*========== Nav ==========*/
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #FFF;
+    opacity: .35;
+    
+  }
+  
+  .nav {
+    max-width: 1200px;
+    width: calc(100% - 4rem);
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+
+
+    &__logo {
+        max-width: 70px;
+        min-width: 50px;
+    }
+  
+    &__list {
+      display: flex;
+      gap: 2.5rem;
+    }
+  
+    &__item {
+      align-self: center;
+      position: relative;
+      font-size: var(--navSize);
+     
+    }
+
+    &__item a {
+       color: var(--h1Color);
+        
+
+    }
+  
+    &__item:hover {
+      transition: 0.3s;
+      transform: scale(1.1, 1.1);
+    }
+  }
+  
+/*========== Home ==========*/
+
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/img/bghome.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 /*========== Elegirnos ==========*/
@@ -69,14 +151,11 @@ ul {
 .cardsText_card {
 
     border-radius: 5px;
-
-    box-shadow: 7px 7px 12px 2px rgba(113,101,101,0.68);
-     -webkit-box-shadow: 7px 7px 12px 2px rgba(113,101,101,0.68);
-     -moz-box-shadow: 7px 7px 12px 2px rgba(113,101,101,0.68);
-
+    box-shadow: 2px 8px 20px 2px rgba(0,0,0,0.10);
+     
     h4 {
         color: var(--colorBlue);
-        font-size: 1.5rem;
+        font-size: var(--mediumSize);
         margin-top: 1rem;
     }
 
@@ -91,7 +170,7 @@ ul {
 /*========== Propiedades ==========*/
 
 .propiedades {
-    background-color: #ECECEC;
+    background-color: #F2F2F2;
     padding-bottom: 4rem;
 }
 
@@ -108,14 +187,13 @@ ul {
 
 .propiedadesCard {
     background-color: #FFF;
-    box-shadow: 7px 7px 12px 2px rgba(113,101,101,0.68);
-     -webkit-box-shadow: 7px 7px 12px 2px rgba(113,101,101,0.68);
-     -moz-box-shadow: 7px 7px 12px 2px rgba(113,101,101,0.68);
-     border-radius: 5px;
+    box-shadow: 2px 8px 20px 2px rgba(0,0,0,0.10);
+    border-radius: 5px;
 
 
     img {
         border-radius: 5px;
+       
     }
 
     &_subTitle {
@@ -125,7 +203,7 @@ ul {
 
     &_title {
         color: var(--colorBlue);
-        font-size: 1.3rem;
+        font-size: var(--mediumSize);
     }
 
     &_info {
@@ -148,4 +226,117 @@ ul {
 .bx-home, .bx-location-plus {
     color: var(--colorOrange);
     margin-right: .5rem;
+}
+
+
+/*========== Ahorros ==========*/
+
+.ahorro_left {
+
+    padding: 2rem;
+
+    &_title {color: var(--colorBlue);
+        font-size: var(--mediumSize);
+    margin-bottom: .5rem;}
+
+    &_text {
+        font-size: 1.375rem;
+    }
+
+    &_button {
+        display: inline-block;
+       
+        background-color: var(--colorOrange);
+        font-size: var(--mediumSize);
+        color: #FFF;
+        text-align: center;
+        border-radius: 5px;
+        padding: .3rem 5rem;
+        margin-top: 2rem;
+    }
+}
+
+
+.ahorro_right {
+    background-color: var(--colorBlue);
+    width: 100%;
+    
+    img {
+        transform: translate(2%, -2%);
+        display: block;
+    }
+        
+
+}
+
+/*========== Testimonios ==========*/
+
+.testimonios {
+
+    background-color: var(--colorBlue);
+
+    &_titulo {
+        color: #FFF;
+        font-size: var(--titulosSize);
+    }
+}
+
+/*========== BeforeMap ==========*/
+
+.contenedor {
+    padding: 2rem;
+    border-left: 1px solid #E7E7E7;
+    width: 100%;
+    text-align: center;
+
+    &_title {
+        color: var(--colorOrange);
+        font-size: var(--titulosSize);
+    }
+
+    i {
+        margin-right: 1rem;
+        color: var(--pColor);
+    }
+
+    &_text {
+        font-size: .875rem;
+    }
+}
+
+
+/*========== Footer ==========*/
+
+.footer {
+    width: 100%;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.footer_second .row{ 
+    gap: 4rem;
+}
+
+
+.footer_list_row {
+    width: 100%;
+    
+}
+
+.footer_first {
+    background-color: #FAFAFA;
+    padding: 2rem 0;
+}
+
+.text_title {
+    font-size: var(--titulosSize);
+    color: var(--colorBlue);
+}
+
+
+.footer_item_title {
+    font-size: var(--mediumSize);
+    color: var(--colorBlue);
+   
+
 }
