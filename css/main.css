@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 :root {
   --colorBlue: #002554;
-  --colorOrange: #FFAF00;
+  --colorOrange: #ffaf00;
   --h1Color: #424242;
-  --pColor: #5A5B5F;
+  --pColor: #5a5b5f;
   --titulosSize: 2.625rem;
   --mediumSize: 1.875rem;
   --navSize: 1.25rem;
@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: var(--pColor);
@@ -36,7 +36,12 @@ img {
   height: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--h1color);
 }
 
@@ -78,8 +83,8 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #FFF;
-  opacity: .35;
+  background-color: #fff;
+  opacity: 0.35;
 }
 
 .nav {
@@ -129,6 +134,13 @@ h1, h2, h3, h4, h5, h6 {
           transform: scale(1.1, 1.1);
 }
 
+.closeMenu,
+.openMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
 /*========== Home ==========*/
 .home {
   height: 100vh;
@@ -136,6 +148,23 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(/img/bghome.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.home .button {
+  position: absolute;
+  bottom: 5rem;
+  left: 3rem;
+  display: inline-block;
+  background-color: var(--colorOrange);
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 0.3rem 3rem;
+  margin-top: 1rem;
+  font-size: var(--mediumSize);
+  border: none;
+  cursor: pointer;
 }
 
 /*========== Elegirnos ==========*/
@@ -159,13 +188,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cardsText_card p {
-  padding: .5rem 2rem 2rem 2rem;
+  padding: 0.5rem 2rem 2rem 2rem;
   line-height: 1.3rem;
 }
 
 /*========== Propiedades ==========*/
 .propiedades {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding-bottom: 4rem;
 }
 
@@ -181,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .propiedadesCard {
-  background-color: #FFF;
+  background-color: #fff;
   -webkit-box-shadow: 2px 8px 20px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 8px 20px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -193,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .propiedadesCard_subTitle {
   color: var(--colorBlue);
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .propiedadesCard_title {
@@ -202,34 +231,36 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .propiedadesCard_info {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .propiedadesCard_button {
   display: inline-block;
   width: 100%;
   background-color: var(--colorOrange);
-  color: #FFF;
+  color: #fff;
   text-align: center;
   border-radius: 5px;
-  padding: .3rem 0;
+  padding: 0.3rem 0;
   margin-top: 1rem;
 }
 
-.bx-home, .bx-location-plus {
+.bx-home,
+.bx-location-plus {
   color: var(--colorOrange);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 /*========== Ahorros ==========*/
 .ahorro_left {
   padding: 2rem;
+  width: 100%;
 }
 
 .ahorro_left_title {
   color: var(--colorBlue);
   font-size: var(--mediumSize);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .ahorro_left_text {
@@ -240,10 +271,10 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   background-color: var(--colorOrange);
   font-size: var(--mediumSize);
-  color: #FFF;
+  color: #fff;
   text-align: center;
   border-radius: 5px;
-  padding: .3rem 5rem;
+  padding: 0.3rem 5rem;
   margin-top: 2rem;
 }
 
@@ -265,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonios_titulo {
-  color: #FFF;
+  color: #fff;
   font-size: var(--titulosSize);
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -275,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .testimonios_titulo::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 2px;
   bottom: -1px;
   margin: 0 auto;
@@ -290,7 +321,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 3rem;
   border-radius: 10px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .slider_contenedor {
@@ -332,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 /*========== BeforeMap ==========*/
 .contenedor {
   padding: 2rem;
-  border-left: 1px solid #E7E7E7;
+  border-left: 1px solid #e7e7e7;
   width: 100%;
   text-align: center;
 }
@@ -348,7 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contenedor_text {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 /*========== Footer ==========*/
@@ -378,15 +409,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer_list_row i {
   color: var(--colorOrange);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .footer_list_row_contacto p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer_first {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 2rem 0;
   margin-bottom: 2rem;
 }
@@ -398,7 +429,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search input {
-  outline: var(--colorOrange);
+  border-color: var(--colorOrange);
+  padding: 0.5rem 5rem;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
 }
 
 .text_title {
@@ -416,7 +451,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer_item_title::after {
   position: absolute;
-  content: '';
+  content: "";
   height: 2px;
   bottom: -1px;
   left: 0;
@@ -427,14 +462,109 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer_item_subTitle {
   color: var(--colorBlue);
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .footer_links {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer_links a {
   color: var(--pColor);
+}
+
+/*========== RESPONSIVE MENU ==========*/
+@media screen and (max-width: 1025px) {
+  .nav .nav-menu {
+    height: 50vh;
+    position: fixed;
+    top: 6.5rem;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: top 3s ease;
+    transition: top 3s ease;
+    display: none;
+  }
+  .nav .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0.3rem;
+  }
+  .nav .nav__item {
+    margin-top: 0.2rem;
+  }
+  .nav__item--contacto {
+    display: inline-block;
+  }
+  .nav .openMenu {
+    display: block;
+  }
+  .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  /*========== Footer ==========*/
+  .footer_second .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .footer_first .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
+  .footer_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .footer_list_row {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .before_maps .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor {
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .footer_link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
