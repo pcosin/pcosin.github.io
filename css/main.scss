@@ -262,7 +262,7 @@ ul {
     width: 100%;
     
     img {
-        transform: translate(2%, -2%);
+        transform: translate(2%, -1%);
         display: block;
     }
         
@@ -274,10 +274,73 @@ ul {
 .testimonios {
 
     background-color: var(--colorBlue);
+    padding: 2rem 0 5rem 0;
 
     &_titulo {
         color: #FFF;
         font-size: var(--titulosSize);
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+        
+        position: relative;
+    }
+
+    &_titulo::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: -1px; 
+        margin: 0 auto;
+		  left: 0;
+        right: 0;
+		  width: 10%;
+		  background: var(--colorOrange);
+
+    }
+}
+
+.contenedor_testimonios {
+    
+    width: 98%;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+.slider_contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_testimonios {
+
+    
+
+    
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto;
+        display: block;
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    p {
+        text-align: center;
+        padding: 0 4rem;
+        font-size: 1.3rem;
+    }
+
+    h4 {
+        text-align: center;
+        padding: 1rem;
+        font-size: var(--mediumSize);
+        color: var(--colorBlue);
     }
 }
 
@@ -320,23 +383,74 @@ ul {
 
 .footer_list_row {
     width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+      
+    i {
+        color: var(--colorOrange);
+        margin-right: .5rem;
+    }
     
+}
+
+.footer_list_row_contacto p {
+    margin-bottom: .5rem;
 }
 
 .footer_first {
     background-color: #FAFAFA;
     padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+.search {
+    align-self: center;
+
+    input {
+        outline: var(--colorOrange);
+        
+    }
 }
 
 .text_title {
     font-size: var(--titulosSize);
     color: var(--colorBlue);
+   
 }
 
 
 .footer_item_title {
     font-size: var(--mediumSize);
     color: var(--colorBlue);
-   
+    position: relative;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+
+}
+
+.footer_item_title::after {
+        
+    position: absolute;
+    content: '';
+    height: 2px;
+    bottom: -1px; 
+    left: 0;
+    right: 0;
+      width: 10%;
+      background: var(--colorOrange);
+}
+
+.footer_item_subTitle {
+    color: var(--colorBlue);
+    margin: .5rem 0;
+}
+
+.footer_links {
+    margin-bottom: .5rem;
+}
+
+.footer_links a {
+    color: var(--pColor);
 
 }
