@@ -10,10 +10,9 @@ closeMenu.addEventListener('click',close);
 
 function show(){
     mainMenu.style.display = 'flex';
-    mainMenu.style.top = '8rem';
+    mainMenu.style.top = '5rem';
     mainMenu.style.transition = '2s';
     
-   
 
 }
 function close(){

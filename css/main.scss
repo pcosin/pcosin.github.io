@@ -81,8 +81,8 @@ h6 {
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: #fff;
-  opacity: 0.35;
+  background-color: rgba(255, 255, 255, 0.35);
+
 }
 
 .nav {
@@ -162,6 +162,8 @@ h6 {
   width: calc(100% - 4rem);
   margin: 3rem auto;
 }
+
+
 
 .cardsText_card {
   border-radius: 5px;
@@ -248,7 +250,9 @@ h6 {
     color: var(--colorBlue);
     font-size: var(--mediumSize);
     margin-bottom: 0.5rem;
+
   }
+
 
   &_text {
     font-size: 1.375rem;
@@ -289,7 +293,6 @@ h6 {
     margin-bottom: 1.5rem;
     line-height: 1.2;
     margin-bottom: 3rem;
-
     position: relative;
   }
 
@@ -473,7 +476,6 @@ h6 {
     .nav .nav-menu {
       height: 50vh;
       position: fixed;
-      top: 6.5rem;
       right: 0;
       left: 0;
       z-index: 10;
@@ -481,6 +483,7 @@ h6 {
       justify-content: center;
       align-items: center;
       transition: top 3s ease;
+      background-color: rgba(255, 255, 255, 0.5);
       display: none;
     }
   
