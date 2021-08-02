@@ -480,9 +480,6 @@ h6 {
 
 /*========== RESPONSIVE MENU ==========*/
 @media screen and (max-width: 1025px) {
-  .header {
-    opacity: 1;
-  }
   .nav .nav-menu {
     height: 50vh;
     position: fixed;
