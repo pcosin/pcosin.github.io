@@ -389,10 +389,6 @@ h6 {
   padding: 2rem;
 }
 
-.footer_second .row {
-  gap: 4rem;
-}
-
 .footer_list_row {
   width: 100%;
   display: -webkit-box;
@@ -433,7 +429,17 @@ h6 {
   padding: 0.5rem 5rem;
   border-radius: 5px;
   display: block;
-  width: 100%;
+}
+
+.search .email {
+  color: var(--colorOrange);
+  border: none;
+  margin: -3px;
+  cursor: pointer;
+}
+
+.footer_second .row {
+  gap: 4rem;
 }
 
 .text_title {
@@ -475,6 +481,9 @@ h6 {
 
 /*========== RESPONSIVE MENU ==========*/
 @media screen and (max-width: 1025px) {
+  .header {
+    opacity: 1;
+  }
   .nav .nav-menu {
     height: 50vh;
     position: fixed;
@@ -529,12 +538,15 @@ h6 {
             flex-direction: column;
     gap: 2rem;
   }
-  .footer_first .row {
+  .footer_first > .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 2rem;
+  }
+  .newsletter .text {
+    text-align: center;
   }
   .footer_link {
     display: -webkit-box;

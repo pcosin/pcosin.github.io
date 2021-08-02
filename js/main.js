@@ -12,6 +12,7 @@ function show(){
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '8rem';
     mainMenu.style.transition = '2s';
+    
    
 
 }
