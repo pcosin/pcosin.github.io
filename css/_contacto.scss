@@ -1,0 +1,36 @@
+.contacto {
+    margin-top: 5rem;
+
+}
+
+.wrapper_right {
+
+    &_title {
+        color: 
+        #FFF;
+    font-size: var(--mediumSize);
+    margin-bottom: 0.5rem;
+    padding: 1rem 2rem 0 2rem;
+
+    }
+
+}
+
+.contactoForm {
+    width: 100%;
+    padding: 2rem;
+    
+}
+
+.contactoInput {
+
+    input, textarea {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+        border-color: #FFF;
+        background-color: transparent;
+        margin-bottom: 1rem;
+    }
+   
+}
