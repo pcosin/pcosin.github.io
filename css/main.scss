@@ -583,6 +583,8 @@ h6 {
     }
   }
 
+  
+
 @media screen and (max-width: 780px) {
   /*========== Footer ==========*/
 
@@ -612,7 +614,15 @@ h6 {
   .footer_list_row {
     align-items: flex-start;
   }
+
+  .search {
+    input {
+      padding: 0.5rem rem 0.5rem 0.5rem;
+
+    }
+  }
 }
+
 
 @media screen and (max-width: 570px) {
   .before_maps .row {
@@ -630,6 +640,13 @@ h6 {
 
   .newsletter {
     padding: 2rem;
+  }
+
+  .search {
+    input {
+      padding: 0.5rem rem 0.5rem 0.5rem;
+
+    }
   }
 }
 

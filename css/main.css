@@ -955,6 +955,9 @@ h6 {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .search input {
+    padding: 0.5rem rem 0.5rem 0.5rem;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -976,6 +979,9 @@ h6 {
   }
   .newsletter {
     padding: 2rem;
+  }
+  .search input {
+    padding: 0.5rem rem 0.5rem 0.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
