@@ -3,6 +3,10 @@
 @import "inversiones";
 @import "nosotros";
 @import "contacto";
+@import "proyectos";
+@import "variables";
+
+
 
 
 
@@ -65,12 +69,34 @@ h6 {
   &_titulo {
     padding: 2rem;
     font-size: var(--titulosSize);
+    position: relative;
+    line-height: 0;
+    margin-bottom: 3rem;
+  }
+
+  &_titulo::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 10%;
+    background: var(--colorOrange);
+
   }
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.grid_equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
@@ -453,16 +479,18 @@ h6 {
   align-self: center;
 
   input {
-    border-color: var(--colorOrange);
-    padding: 0.5rem 5rem;
-    border-radius: 5px;
+    border: 2px solid var(--colorOrange);
+    padding: 0.5rem 7rem 0.5rem 0.5rem;
+    border-radius: 10px;
     display: block;
+    outline: none;
+    font-size: 1rem;
     
   }
 
   .email {color: var(--colorOrange);
     border: none;
-    margin: -3px;
+    margin: -5px;
     cursor: pointer;
 }
 }
@@ -599,155 +627,3 @@ h6 {
   }
 }
 
-
-  /*========== Paginas ==========*/
-
-  .inversiones {
-    margin-top: 5rem;
-}
-
-.wrapper_left_title--second {
-    color: var(--colorBlue);
-    font-size: var(--mediumSize);
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
-
-}
-
-.equipo {}
-
-.contacto {
-  margin-top: 5rem;
-
-}
-
-.wrapper_right {
-
-  &_title {
-      color: 
-      #FFF;
-  font-size: var(--mediumSize);
-  margin-bottom: 0.5rem;
-  padding: 1rem 2rem 0 2rem;
-
-  }
-
-}
-
-.contactoForm {
-  width: 100%;
-  padding: 2rem;
-  
-}
-
-.contactoInput {
-
-  input, textarea {
-      width: 100%;
-      padding: 1rem;
-      border-radius: 10px;
-      border-color: #FFF;
-      background-color: transparent;
-      margin-bottom: 1rem;
-  }
- 
-}
-
-.nosotros {
-  margin-top: 5rem;
-}
-
-.equipoCards {
-
-  img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin: 0 auto;
-      display: block;
-      padding: 1rem 1rem 0 1rem;
-    }
-
-    p {
-      text-align: center;
-      padding: 0 4rem;
-      font-size: 1rem;
-    }
-}
-
-
-#propiedades {
-  .propiedades {
-  background-color: #FFF;}
-}
-
-
-.propiedadesHome {
-  margin-top: 6rem;
-}
-
-.container .input{
-border: 0;
-outline: none;
-color: #8b7d77;
-}
-
-.search_wrap{
-width: 500px;
-margin: 38px auto;
-}
-
-.search_wrap .search_box{
-position: relative;
-width: 500px;
-height: 60px;
-}
-
-.search_wrap .search_box .input{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-padding: 10px 20px;
-border-radius: 3px;
-font-size: 18px;
-}
-
-.search_wrap .search_box .btn{
-position: absolute;
-top: 0;
-right: 0;
-width: 60px;
-height: 100%;
-background: #7690da;
-z-index: 1;
-cursor: pointer;
-}
-
-.search_wrap .search_box .btn:hover{
-background: #708bd2;	
-}
-
-.search_wrap .search_box .btn.btn_common .fas{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-color: #fff;
-font-size: 20px;
-}
-.search_wrap.search_wrap_4 .search_box .input{
-padding-left: 80px;
-}
-
-.search_wrap.search_wrap_4 .search_box .input,
-.search_wrap.search_wrap_6 .search_box .input{
-border-radius: 50px;
-}
-
-.search_wrap.search_wrap_4 .search_box .btn{
-left: 0px;
-border-radius: 50%;
-} 
