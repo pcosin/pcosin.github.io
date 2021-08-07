@@ -821,7 +821,7 @@ h6 {
 
 .search input {
   border: 2px solid var(--colorOrange);
-  padding: 0.5rem 5rem 0.5rem 0.5rem;
+  padding: 0.5rem 7rem 0.5rem 0.5rem;
   border-radius: 10px;
   display: block;
   outline: none;
@@ -967,7 +967,7 @@ h6 {
             align-items: flex-start;
   }
   .search input {
-    padding: 0.5rem rem 0.5rem 0.5rem;
+    padding: 0.5rem 4rem 0.5rem 0.5rem;
   }
 }
 
