@@ -3,18 +3,21 @@
     
 }
 
-.caractristicasIconos {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: .5rem;
-    padding: 2rem
-}
+.iconosWrapper {display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  padding: 0 2rem;
+  gap-column: 1rem;
+  gap-row: .8rem;
+ }
 
 .iconosItem {
-    display: grid;
-    grid-template-columns: 1fr;
-    place-content: center;
+    display: flex;
+    justify-content: flex-start;
+   align-items: center;
+   flex-wrap: no-wrap;
     width: 100%;
+    text-align: center;
         
     i {
         margin-right: .5rem;
